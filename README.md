@@ -7,11 +7,18 @@
 
 ## Usage
 
+Lein config:
+
+```clojure
+[om-transition "0.0.1"]
+```
+
 `om-transition` is just an Om component with a few extra args, which injects a few values into the wrapped component's passed cursor.
 
 ```clojure
 (ns my-app
   (:require
+   [om-transition.core :refer [transition]]
    [om.core :as om :include-macros true]
    [om.dome :as dom :include-macros true]))
 
