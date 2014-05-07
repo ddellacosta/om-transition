@@ -2,7 +2,7 @@
 
 `om-transition` is a simple Om component which takes a set of options and another Om component as arguments, and it injects simple timing information into that component (via its cursor) so that it can...do whatever it would like to do.
 
-`om-transition` relies upon the fact that Om itself renders with `requestAnimationFrame` (with a fallback to `setTimeout`), and leverages this by simply setting the time and easing value to trigger a re-render, and letting Om (and React) do the hard work.
+`om-transition` relies upon the fact that Om itself renders with [`requestAnimationFrame`](https://developer.mozilla.org/en/docs/Web/API/window.requestAnimationFrame) (with a fallback to `setTimeout`), and leverages this by simply setting the time and easing value to trigger a re-render, and letting Om (and React) do the hard work.
 
 
 ## Usage
